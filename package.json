@@ -1,0 +1,29 @@
+{
+  "name": "cypresstestapp1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.9.4",
+    "@percy/cypress": "^2.2.0",
+    "cypress": "^4.2.0",
+    "cypress-cucumber-preprocessor": "^1.19.0",
+    "cypress-dark": "^1.7.14",
+    "cypress-file-upload": "^3.5.3",
+    "cypress-multi-reporters": "^1.2.3",
+    "cypress-xpath": "^1.4.0",
+    "mocha": "^7.0.0",
+    "mocha-junit-reporter": "^1.23.1",
+    "mochawesome": "4.1.0",
+    "mochawesome-merge": "4.0.0",
+    "mochawesome-report-generator": "4.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
