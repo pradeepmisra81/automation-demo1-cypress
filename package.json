@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:verify": "cypress verify",
+    "cy:version": "cypress version",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:chrome": "cypress run --browser chrome",
+    "cy:firefox": "cypress run --browser firefox",
+    "cy:record": "cypress run --record",
+    "cy:record:parallel": "cypress run --record --parallel",
+    "cy:dashboard": "cypress run --record --key 82c53163-d187-4f95-94bc-7ee69b2f48f2"
   },
   "author": "",
   "license": "ISC",

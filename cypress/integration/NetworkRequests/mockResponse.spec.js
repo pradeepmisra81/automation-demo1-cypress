@@ -1,6 +1,6 @@
-describe("fake the network response", () => {
-    it("Test to fake the network response", () => {
-        let message = 'wow,now we are able to change the nw response';
+describe("mock the network response", () => {
+    it("Test to mock the network response", () => {
+        let message = 'wow, now we are able to mock the network response';
         cy.visit("https://example.cypress.io/commands/network-requests");
         cy.server();
 
@@ -15,13 +15,10 @@ describe("fake the network response", () => {
                 delay: 1000
             }).as('UpdateComment');
 
-        // we have code that puts a comment when
-        // the button is clicked in scripts.js
         cy.get('.network-put').click();
 
         cy.wait('@UpdateComment');
 
-        // our 404 statusCode logic in scripts.js executed
         cy.get('.network-put-comment').should('contain', message);
     })
 })
